@@ -14,17 +14,11 @@ export const config: Configuration = {
     extend: {
       colors: {
         ...colors,
-        primary: {
-          50: "#353353",
-          100: "#353353",
-          200: "#353353",
-          300: "#353353",
-          400: "#353353",
+        primaryBG: {
           500: "#353353",
-          600: "#353353",
-          700: "#353353",
-          800: "#353353",
-          900: "#353353",
+        },
+        secondaryBG: {
+          500: "#f9f9ff",
         },
         selectedText: {
           500: "#ffd15c",

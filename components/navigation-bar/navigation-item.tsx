@@ -1,20 +1,19 @@
 /** @jsx h */
-import { h } from "preact";
+import { h, VNode } from "preact";
 import { tw } from "@twind";
-// import HouseIcon from "./icons/home-icon.tsx";
-// import AboutIcon from "./icons/about-icon.tsx";
 
 type Props = {
-  icon: any;
-  children: string;
+  icon: VNode;
+  href: string;
+  children: VNode | string;
 };
 
-export default function NavigationBar({ icon, children }: Props) {
+export default function NavigationBar({ icon, children, href }: Props) {
   return (
-    <li class={tw`mb-2`}>
+    <li class={tw`mb-4`}>
       <a
         class={tw`text(white sm) flex hover:text(selectedText-500)`}
-        href={"/pedro"}
+        href={href}
       >
         {icon}
         <span class={tw`ml-4`}>{children}</span>

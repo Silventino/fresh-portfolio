@@ -9,49 +9,60 @@ import BlogIcon from "./icons/blog-icon.tsx";
 import EducationIcon from "./icons/education-icon.tsx";
 import ContactIcon from "./icons/contact-icon.tsx";
 import NavigationItem from "./navigation-item.tsx";
+import { DRAWER_WIDTH } from "../../utils/constants.ts";
 
 export default function NavigationBar() {
   return (
     <div
-      class={tw`h-screen w-1/4 bg-primary-500 border-r-1 border-gray-600 py-14 px-10 flex flex-col justify-between`}
+      class={tw`h-screen bg-primaryBG-500 border-r-1 border-gray-600 pb-4 pt-14 px-10 flex flex-col justify-between fixed`}
+      style={{ width: DRAWER_WIDTH }}
     >
       <p class={tw`text(white 2xl) font-black mb-10`}>
         silventino<span class={tw`text-red-600`}>.</span>
       </p>
 
-      <nav>
+      <nav style={{ marginBottom: 60 }}>
         <ul>
-          <NavigationItem icon={<HomeIcon color="#ffd15c" />}>
+          <NavigationItem href={"#home"} icon={<HomeIcon color="#ffd15c" />}>
             Home
           </NavigationItem>
 
-          <NavigationItem icon={<AboutIcon color="#ffd15c" />}>
+          <NavigationItem href={"#about"} icon={<AboutIcon color="#ffd15c" />}>
             About
           </NavigationItem>
 
-          <NavigationItem icon={<ServicesIcon color="#ffd15c" />}>
+          <NavigationItem
+            href={"#services"}
+            icon={<ServicesIcon color="#ffd15c" />}
+          >
             Services
           </NavigationItem>
 
-          <NavigationItem icon={<EducationIcon color="#ffd15c" />}>
+          <NavigationItem
+            href={"#education"}
+            icon={<EducationIcon color="#ffd15c" />}
+          >
             Education
           </NavigationItem>
 
-          <NavigationItem icon={<WorksIcon color="#ffd15c" />}>
+          <NavigationItem href={"#works"} icon={<WorksIcon color="#ffd15c" />}>
             Works
           </NavigationItem>
 
-          <NavigationItem icon={<BlogIcon color="#ffd15c" />}>
+          <NavigationItem href={"#blog"} icon={<BlogIcon color="#ffd15c" />}>
             Blog
           </NavigationItem>
 
-          <NavigationItem icon={<ContactIcon color="#ffd15c" />}>
+          <NavigationItem
+            href={"#contact"}
+            icon={<ContactIcon color="#ffd15c" />}
+          >
             Contact
           </NavigationItem>
         </ul>
       </nav>
 
-      <p class={tw`text(white xs) font-thin`}>© Silventino 2022</p>
+      <p class={tw`text(gray-400 xs) font-thin`}>© Silventino 2022</p>
     </div>
   );
 }
