@@ -5,11 +5,11 @@ import NavigationBar from "../components/navigation-bar/navigation-bar.tsx";
 import Head from "../components/head/head.tsx";
 import ContentContainer from "../components/content-container/content-container.tsx";
 import ContentItem from "../components/content-item/content-item.tsx";
-import HomeSection from "../components/sections/home-section.tsx";
+import HomeSection from "../components/sections/home-section/home-section.tsx";
 
 export default function Home() {
   return (
-    <div class={tw`h-screen w-screen bg-primaryBG-500 flex`}>
+    <div class={tw`h-screen bg-primaryBG-500 flex`}>
       <Head />
       <NavigationBar />
 

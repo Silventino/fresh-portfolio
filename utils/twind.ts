@@ -1,6 +1,7 @@
 import { IS_BROWSER } from "$fresh/runtime.ts";
 import { Configuration, setup } from "twind";
 import * as colors from "twind/colors";
+import { myColors } from "./constants.ts";
 export * from "twind";
 
 export const config: Configuration = {
@@ -15,13 +16,13 @@ export const config: Configuration = {
       colors: {
         ...colors,
         primaryBG: {
-          500: "#353353",
+          500: myColors.primaryBG,
         },
         secondaryBG: {
-          500: "#f9f9ff",
+          500: myColors.secondaryBG,
         },
         selectedText: {
-          500: "#ffd15c",
+          500: myColors.selectedText,
         },
       },
     },

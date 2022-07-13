@@ -9,7 +9,7 @@ import BlogIcon from "./icons/blog-icon.tsx";
 import EducationIcon from "./icons/education-icon.tsx";
 import ContactIcon from "./icons/contact-icon.tsx";
 import NavigationItem from "./navigation-item.tsx";
-import { DRAWER_WIDTH } from "../../utils/constants.ts";
+import { myColors, DRAWER_WIDTH } from "../../utils/constants.ts";
 
 export default function NavigationBar() {
   return (
@@ -21,47 +21,61 @@ export default function NavigationBar() {
         silventino<span class={tw`text-red-600`}>.</span>
       </p>
 
-      <nav style={{ marginBottom: 60 }}>
+      <nav>
         <ul>
-          <NavigationItem href={"#home"} icon={<HomeIcon color="#ffd15c" />}>
+          <NavigationItem
+            href={"#home"}
+            icon={<HomeIcon color={myColors.selectedText} />}
+          >
             Home
           </NavigationItem>
 
-          <NavigationItem href={"#about"} icon={<AboutIcon color="#ffd15c" />}>
+          <NavigationItem
+            href={"#about"}
+            icon={<AboutIcon color={myColors.selectedText} />}
+          >
             About
           </NavigationItem>
 
           <NavigationItem
             href={"#services"}
-            icon={<ServicesIcon color="#ffd15c" />}
+            icon={<ServicesIcon color={myColors.selectedText} />}
           >
             Services
           </NavigationItem>
 
           <NavigationItem
             href={"#education"}
-            icon={<EducationIcon color="#ffd15c" />}
+            icon={<EducationIcon color={myColors.selectedText} />}
           >
             Education
           </NavigationItem>
 
-          <NavigationItem href={"#works"} icon={<WorksIcon color="#ffd15c" />}>
+          <NavigationItem
+            href={"#works"}
+            icon={<WorksIcon color={myColors.selectedText} />}
+          >
             Works
           </NavigationItem>
 
-          <NavigationItem href={"#blog"} icon={<BlogIcon color="#ffd15c" />}>
+          <NavigationItem
+            href={"#blog"}
+            icon={<BlogIcon color={myColors.selectedText} />}
+          >
             Blog
           </NavigationItem>
 
           <NavigationItem
             href={"#contact"}
-            icon={<ContactIcon color="#ffd15c" />}
+            icon={<ContactIcon color={myColors.selectedText} />}
           >
             Contact
           </NavigationItem>
         </ul>
       </nav>
 
+      <div />
+      <div />
       <p class={tw`text(gray-400 xs) font-thin`}>© Silventino 2022</p>
     </div>
   );
