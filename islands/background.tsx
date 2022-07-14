@@ -1,6 +1,6 @@
 /** @jsx h */
 import { h } from "preact";
-import { useEffect, useState } from "preact/hooks";
+import { useEffect, useRef, useState } from "preact/hooks";
 import GameIcon from "../components/background/icons/game-icon.tsx";
 import MusicIcon from "../components/background/icons/music-icon.tsx";
 import PawIcon from "../components/background/icons/paw-icon.tsx";
@@ -15,20 +15,27 @@ const MOD_LAYER_4 = 65;
 type Props = {};
 
 export default function Background({}: Props) {
+  const divRef = useRef<HTMLDivElement | null>(null);
   const [positionX, setPositionX] = useState(0);
   const [positionY, setPositionY] = useState(0);
 
   useEffect(() => {
-    const listener: any = (event: MouseEvent) => {
+    const listener = (event: MouseEvent) => {
       const x = event.clientX;
       const y = event.clientY;
       setPositionX(x);
       setPositionY(y);
     };
 
-    document.addEventListener("mousemove", listener);
+    if (divRef.current) {
+      divRef.current.addEventListener("mousemove", listener);
+    }
 
-    return () => document.removeEventListener("mousemove", listener);
+    return () => {
+      if (divRef.current) {
+        divRef.current.removeEventListener("mousemove", listener);
+      }
+    };
   }, []);
 
   const transformLayer1 = `translate(-${positionX / MOD_LAYER_1}px, -${
@@ -47,7 +54,14 @@ export default function Background({}: Props) {
   }px)`;
 
   return (
-    <div>
+    <div
+      ref={(x) => (divRef.current = x)}
+      style={{
+        width: "100%",
+        height: "100%",
+        position: "absolute",
+      }}
+    >
       {/* LAYER 1 */}
       <StarIcon
         width={30}
