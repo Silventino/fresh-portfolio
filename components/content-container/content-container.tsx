@@ -16,22 +16,6 @@ export default function ContentContainer({ children }: Props) {
       }}
     >
       {children}
-      {/* 
-      <div id={"home"} class={tw`w-full h-screen bg-primaryBG-500`}>
-        <img
-          src="/logo.svg"
-          height="100px"
-          alt="the fresh logo: a sliced lemon dripping with juice"
-        />
-      </div>
-      <div id={"about"} class={tw`w-full h-screen bg-secondaryBG-500`}>
-        <img
-          src="/logo.svg"
-          height="100px"
-          alt="the fresh logo: a sliced lemon dripping with juice"
-        />
-      </div> 
-      */}
     </div>
   );
 }

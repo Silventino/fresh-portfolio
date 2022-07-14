@@ -6,12 +6,16 @@ import InstagramIcon from "./icons/instagram-icon.tsx";
 import LinkedinIcon from "./icons/linkedin-icon.tsx";
 import TwitterIcon from "./icons/twitter-icon.tsx";
 import MailIcon from "./icons/mail-icon.tsx";
+import Background from "../../../islands/background.tsx";
 
 export default function HomeSection() {
   return (
     <section
       class={tw`w-full h-full flex flex-col items-center justify-center`}
+      style={{ position: "relative" }}
     >
+      <Background />
+
       <img
         src="/avatar.svg"
         style={{ height: 110 }}
