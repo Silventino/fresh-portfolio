@@ -16,12 +16,7 @@ export default function HomeSection() {
     >
       <Background />
 
-      <img
-        src="/avatar.svg"
-        style={{ height: 110 }}
-        alt="photo"
-        class={tw`mb-4`}
-      />
+      <img src="/me.png" style={{ height: 110 }} alt="photo" class={tw`mb-4`} />
       <h1 class={tw`text(white 2xl) font(bold)`}>Pedro S. Lopes</h1>
       <Typewriter
         fixedText={"I'm a "}

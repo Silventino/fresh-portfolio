@@ -37,12 +37,14 @@ export default function NavigationBar() {
             About
           </NavigationItem>
 
+          {/* 
           <NavigationItem
             href={"#services"}
             icon={<ServicesIcon color={myColors.selectedText} />}
           >
             Services
-          </NavigationItem>
+          </NavigationItem> 
+          */}
 
           <NavigationItem
             href={"#education"}
@@ -58,12 +60,14 @@ export default function NavigationBar() {
             Works
           </NavigationItem>
 
+          {/* 
           <NavigationItem
             href={"#blog"}
             icon={<BlogIcon color={myColors.selectedText} />}
           >
             Blog
-          </NavigationItem>
+          </NavigationItem> 
+          */}
 
           <NavigationItem
             href={"#contact"}
@@ -76,7 +80,26 @@ export default function NavigationBar() {
 
       <div />
       <div />
-      <p class={tw`text(gray-400 xs) font-thin`}>© Silventino 2022</p>
+
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <a href="https://fresh.deno.dev">
+          <img
+            width="197"
+            height="37"
+            src="https://fresh.deno.dev/fresh-badge-dark.svg"
+            alt="Made with Fresh"
+            style={{ marginBottom: 10 }}
+          />
+        </a>
+
+        <p class={tw`text(gray-400 xs) font-thin`}>© Silventino 2022</p>
+      </div>
     </div>
   );
 }

@@ -6,6 +6,7 @@ import Head from "../components/head/head.tsx";
 import ContentContainer from "../components/content-container/content-container.tsx";
 import ContentItem from "../components/content-item/content-item.tsx";
 import HomeSection from "../components/sections/home-section/home-section.tsx";
+import AboutSection from "../components/sections/about-section/about-section.tsx";
 
 export default function Home() {
   return (
@@ -19,20 +20,16 @@ export default function Home() {
         </ContentItem>
 
         <ContentItem id={"about"} customClass={"bg-secondaryBG-500"}>
-          <img
-            src="/logo.svg"
-            height="100px"
-            alt="the fresh logo: a sliced lemon dripping with juice"
-          />
+          <AboutSection />
         </ContentItem>
 
-        <ContentItem id={"services"} customClass={"bg-secondaryBG-500"}>
+        {/* <ContentItem id={"services"} customClass={"bg-secondaryBG-500"}>
           <img
             src="/logo.svg"
             height="100px"
             alt="the fresh logo: a sliced lemon dripping with juice"
           />
-        </ContentItem>
+        </ContentItem> */}
 
         <ContentItem id={"education"} customClass={"bg-secondaryBG-500"}>
           <img
@@ -50,13 +47,13 @@ export default function Home() {
           />
         </ContentItem>
 
-        <ContentItem id={"blog"} customClass={"bg-secondaryBG-500"}>
+        {/* <ContentItem id={"blog"} customClass={"bg-secondaryBG-500"}>
           <img
             src="/logo.svg"
             height="100px"
             alt="the fresh logo: a sliced lemon dripping with juice"
           />
-        </ContentItem>
+        </ContentItem> */}
 
         <ContentItem id={"contact"} customClass={"bg-secondaryBG-500"}>
           <img
