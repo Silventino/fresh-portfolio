@@ -7,6 +7,7 @@ import ContentContainer from "../components/content-container/content-container.
 import ContentItem from "../components/content-item/content-item.tsx";
 import HomeSection from "../components/sections/home-section/home-section.tsx";
 import AboutSection from "../components/sections/about-section/about-section.tsx";
+import WipSection from "../components/sections/wip-section/wip-section.tsx";
 
 export default function Home() {
   return (
@@ -23,44 +24,20 @@ export default function Home() {
           <AboutSection />
         </ContentItem>
 
-        {/* <ContentItem id={"services"} customClass={"bg-secondaryBG-500"}>
-          <img
-            src="/logo.svg"
-            height="100px"
-            alt="the fresh logo: a sliced lemon dripping with juice"
-          />
-        </ContentItem> */}
-
         <ContentItem id={"education"} customClass={"bg-secondaryBG-500"}>
-          <img
-            src="/logo.svg"
-            height="100px"
-            alt="the fresh logo: a sliced lemon dripping with juice"
-          />
+          <WipSection />
         </ContentItem>
 
         <ContentItem id={"works"} customClass={"bg-secondaryBG-500"}>
-          <img
-            src="/logo.svg"
-            height="100px"
-            alt="the fresh logo: a sliced lemon dripping with juice"
-          />
+          <WipSection />
         </ContentItem>
 
         {/* <ContentItem id={"blog"} customClass={"bg-secondaryBG-500"}>
-          <img
-            src="/logo.svg"
-            height="100px"
-            alt="the fresh logo: a sliced lemon dripping with juice"
-          />
+          <WipSection />
         </ContentItem> */}
 
         <ContentItem id={"contact"} customClass={"bg-secondaryBG-500"}>
-          <img
-            src="/logo.svg"
-            height="100px"
-            alt="the fresh logo: a sliced lemon dripping with juice"
-          />
+          <WipSection />
         </ContentItem>
       </ContentContainer>
     </div>

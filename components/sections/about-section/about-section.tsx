@@ -20,7 +20,7 @@ export default function AboutSection() {
           justifyContent: "space-between",
         }}
       >
-        <h1
+        <h2
           style={{
             fontSize: 36,
             fontFamily: '"Rubik",sans-serif',
@@ -29,7 +29,7 @@ export default function AboutSection() {
           }}
         >
           About Me
-        </h1>
+        </h2>
 
         <div
           style={{
