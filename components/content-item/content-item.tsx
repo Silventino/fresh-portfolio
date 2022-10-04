@@ -1,6 +1,4 @@
-/** @jsx h */
 import { h, VNode } from "preact";
-import { tw } from "@twind";
 
 type Props = {
   children: VNode | VNode[];
@@ -10,7 +8,7 @@ type Props = {
 
 export default function ContentItem({ children, id, customClass }: Props) {
   return (
-    <div id={id} class={tw`w-full h-screen ${customClass}`}>
+    <div id={id} class={`w-full h-screen ${customClass}`}>
       {children}
     </div>
   );

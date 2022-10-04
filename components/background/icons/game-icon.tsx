@@ -1,8 +1,6 @@
-/** @jsx h */
-import { h } from "preact";
-// import { tw } from "@twind";
+import { JSX } from "preact";
 
-type Props = { color: string; width: number; style?: h.JSX.CSSProperties };
+type Props = { color: string; width: number; style?: JSX.CSSProperties };
 
 export default function GameIcon({ color, width, style }: Props) {
   return (

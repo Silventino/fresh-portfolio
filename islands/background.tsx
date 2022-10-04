@@ -1,10 +1,8 @@
-/** @jsx h */
-import { h } from "preact";
 import { useEffect, useRef, useState } from "preact/hooks";
 import GameIcon from "../components/background/icons/game-icon.tsx";
 import MusicIcon from "../components/background/icons/music-icon.tsx";
 import PawIcon from "../components/background/icons/paw-icon.tsx";
-// import { tw } from "@twind";
+
 import StarIcon from "../components/background/icons/star-icon.tsx";
 
 const MOD_LAYER_1 = 20;

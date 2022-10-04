@@ -1,5 +1,3 @@
-/** @jsx h */
-import { h } from "preact";
 import ProgressBar from "./progress-bar.tsx";
 
 type Props = {

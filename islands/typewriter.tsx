@@ -1,7 +1,4 @@
-/** @jsx h */
-import { h } from "preact";
 import { useEffect, useState } from "preact/hooks";
-import { tw } from "@twind";
 
 type Props = {
   fixedText: string;
@@ -62,7 +59,7 @@ export default function Typewriter({ fixedText, phrases }: Props) {
   }, [blinking, blinkCount]);
 
   return (
-    <p class={tw`font-bold text(md white) font(thin)`}>
+    <p class={`font-bold text(md white) font(thin)`}>
       {fixedText}
       {text}
       <span

@@ -1,6 +1,3 @@
-/** @jsx h */
-import { h } from "preact";
-
 type Props = {
   color: string;
   progress: number;

@@ -1,24 +1,19 @@
-/** @jsx h */
-import { h } from "preact";
-import { tw } from "@twind";
-import HomeIcon from "./icons/home-icon.tsx";
+import { DRAWER_WIDTH, myColors } from "../../utils/constants.ts";
 import AboutIcon from "./icons/about-icon.tsx";
-import ServicesIcon from "./icons/services-icon.tsx";
-import WorksIcon from "./icons/works-icon.tsx";
-import BlogIcon from "./icons/blog-icon.tsx";
-import EducationIcon from "./icons/education-icon.tsx";
 import ContactIcon from "./icons/contact-icon.tsx";
+import EducationIcon from "./icons/education-icon.tsx";
+import HomeIcon from "./icons/home-icon.tsx";
+import WorksIcon from "./icons/works-icon.tsx";
 import NavigationItem from "./navigation-item.tsx";
-import { myColors, DRAWER_WIDTH } from "../../utils/constants.ts";
 
 export default function NavigationBar() {
   return (
     <div
-      class={tw`h-screen bg-primaryBG-500 border-r-1 border-gray-600 pb-4 pt-14 px-10 flex flex-col justify-between fixed`}
+      class={`h-screen bg-primaryBG-500 border-r-1 border-gray-600 pb-4 pt-14 px-10 flex flex-col justify-between fixed`}
       style={{ width: DRAWER_WIDTH }}
     >
-      <p class={tw`text(white 2xl) font-black mb-10`}>
-        silventino<span class={tw`text-red-600`}>.</span>
+      <p class={`text(white 2xl) font-black mb-10`}>
+        silventino<span class={`text-red-600`}>.</span>
       </p>
 
       <nav>
@@ -98,7 +93,7 @@ export default function NavigationBar() {
           />
         </a>
 
-        <p class={tw`text(gray-400 xs) font-thin`}>© Silventino 2022</p>
+        <p class={`text(gray-400 xs) font-thin`}>© Silventino 2022</p>
       </div>
     </div>
   );

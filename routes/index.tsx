@@ -1,6 +1,3 @@
-/** @jsx h */
-import { h } from "preact";
-import { tw } from "@twind";
 import NavigationBar from "../components/navigation-bar/navigation-bar.tsx";
 import Head from "../components/head/head.tsx";
 import ContentContainer from "../components/content-container/content-container.tsx";
@@ -11,7 +8,7 @@ import WipSection from "../components/sections/wip-section/wip-section.tsx";
 
 export default function Home() {
   return (
-    <div class={tw`h-screen bg-primaryBG-500 flex`}>
+    <div class={`h-screen bg-primaryBG-500 flex`}>
       <Head />
       <NavigationBar />
 

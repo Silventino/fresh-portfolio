@@ -1,12 +1,9 @@
-/** @jsx h */
-import { h } from "preact";
-import { tw } from "@twind";
 import SkillProgressBar from "./skill-progress-bar.tsx";
 
 export default function AboutSection() {
   return (
     <section
-      class={tw`w-full h-full flex flex-col items-center justify-center`}
+      class={`w-full h-full flex flex-col items-center justify-center`}
       style={{ position: "relative" }}
     >
       <div
@@ -42,7 +39,7 @@ export default function AboutSection() {
             src="/me2.png"
             style={{ height: 150, marginRight: 30 }}
             alt="photo"
-            class={tw`mb-4`}
+            class={`mb-4`}
           />
 
           <div

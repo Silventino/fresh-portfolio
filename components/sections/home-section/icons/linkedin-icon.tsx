@@ -1,7 +1,3 @@
-/** @jsx h */
-import { h } from "preact";
-// import { tw } from "@twind";
-
 type Props = {
   color: string;
   width: number;
