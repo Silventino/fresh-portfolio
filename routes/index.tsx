@@ -21,6 +21,7 @@ export default function Home() {
           <AboutSection />
         </ContentItem>
 
+        {/* 
         <ContentItem id={"education"} customClass={"bg-secondaryBG-500"}>
           <WipSection />
         </ContentItem>
@@ -29,13 +30,10 @@ export default function Home() {
           <WipSection />
         </ContentItem>
 
-        {/* <ContentItem id={"blog"} customClass={"bg-secondaryBG-500"}>
-          <WipSection />
-        </ContentItem> */}
-
         <ContentItem id={"contact"} customClass={"bg-secondaryBG-500"}>
           <WipSection />
-        </ContentItem>
+        </ContentItem> 
+        */}
       </ContentContainer>
     </div>
   );

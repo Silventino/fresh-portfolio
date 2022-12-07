@@ -33,14 +33,6 @@ export default function NavigationBar() {
 
           {/* 
           <NavigationItem
-            href={"#services"}
-            icon={<ServicesIcon color={myColors.selectedText} />}
-          >
-            Services
-          </NavigationItem> 
-          */}
-
-          <NavigationItem
             href={"#education"}
             icon={<EducationIcon color={myColors.selectedText} />}
           >
@@ -54,21 +46,13 @@ export default function NavigationBar() {
             Works
           </NavigationItem>
 
-          {/* 
-          <NavigationItem
-            href={"#blog"}
-            icon={<BlogIcon color={myColors.selectedText} />}
-          >
-            Blog
-          </NavigationItem> 
-          */}
-
           <NavigationItem
             href={"#contact"}
             icon={<ContactIcon color={myColors.selectedText} />}
           >
             Contact
-          </NavigationItem>
+          </NavigationItem> 
+          */}
         </ul>
       </nav>
 
