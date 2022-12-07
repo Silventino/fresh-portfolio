@@ -10,9 +10,7 @@ const MOD_LAYER_2 = 35;
 const MOD_LAYER_3 = 50;
 const MOD_LAYER_4 = 65;
 
-type Props = {};
-
-export default function Background({}: Props) {
+export default function Background() {
   const divRef = useRef<HTMLDivElement | null>(null);
   const [positionX, setPositionX] = useState(0);
   const [positionY, setPositionY] = useState(0);

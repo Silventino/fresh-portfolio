@@ -6,7 +6,7 @@ type Props = {
   children: VNode | string;
 };
 
-export default function NavigationBar({ icon, children, href }: Props) {
+export default function NavigationItem({ icon, children, href }: Props) {
   return (
     <li class={`mb-4`}>
       <a class={`text(white sm) flex hover:text(selectedText-500)`} href={href}>

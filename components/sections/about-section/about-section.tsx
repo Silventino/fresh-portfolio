@@ -8,14 +8,13 @@ export default function AboutSection() {
     >
       <div
         style={{
-          width: "100%",
-          height: "100%",
           maxWidth: 900,
-          maxHeight: "80vh",
+          maxHeight: "90vh",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
         }}
+        class={`px-6 w-full h-full`}
       >
         <h2
           style={{
@@ -30,10 +29,11 @@ export default function AboutSection() {
 
         <div
           style={{
-            height: 300,
+            // height: 300,
             display: "flex",
             alignItems: "center",
           }}
+          class={`flex-col md:flex-row`}
         >
           <img
             src="/me2.png"
@@ -51,6 +51,7 @@ export default function AboutSection() {
               borderRight: "15px solid white",
               transform: "translateY(-5px)",
             }}
+            class={`hidden md:flex`}
           />
 
           <div
@@ -61,9 +62,9 @@ export default function AboutSection() {
               backgroundColor: "#fff",
               borderRadius: 20,
               display: "flex",
-              padding: 30,
               alignItems: "center",
             }}
+            class={`flex-col md:flex-row px-2 md:px-6 py-4`}
           >
             <div style={{ flex: 1, paddingLeft: 15, paddingRight: 15 }}>
               <p style={{ fontWeight: "200" }}>
@@ -81,13 +82,13 @@ export default function AboutSection() {
             <div
               style={{
                 flex: 1,
-                display: "flex",
-                flexDirection: "column",
                 paddingLeft: 15,
                 paddingRight: 15,
                 justifyContent: "space-around",
                 height: "100%",
+                width: "100%",
               }}
+              class={`flex-row md:flex-col hidden md:flex`}
             >
               <SkillProgressBar
                 color="rgb(255, 76, 96)"
@@ -116,9 +117,9 @@ export default function AboutSection() {
             alignItems: "center",
           }}
         >
-          <h1 style={{ fontSize: 28, marginBottom: 12 }}>Want to know more?</h1>
+          <h1 style={{ fontSize: 24, marginBottom: 10 }}>Want to know more?</h1>
           <a
-            href="https://drive.google.com/file/d/1SqEC_wYSA7zderUzXW4o9d9Z8KM5_iZg/view?usp=sharing"
+            href="https://silventino.notion.site/Pedro-Silveira-Lopes-9386f60ab4634284b2cf3b5d987113af"
             target="_blank"
             style={{
               color: "#fff",

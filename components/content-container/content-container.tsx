@@ -1,15 +1,12 @@
 import { h, VNode } from "preact";
 
-import { DRAWER_WIDTH } from "../../utils/constants.ts";
-
 type Props = { children: VNode | VNode[] };
 
 export default function ContentContainer({ children }: Props) {
   return (
     <div
-      class={`w-full bg-white scroll-smooth`}
+      class={`w-full bg-white scroll-smooth md:pl-52`}
       style={{
-        paddingLeft: DRAWER_WIDTH,
         height: "fit-content",
         scrollBehavior: "smooth",
       }}

@@ -1,4 +1,4 @@
-import { DRAWER_WIDTH, myColors } from "../../utils/constants.ts";
+import { myColors } from "../../utils/constants.ts";
 import AboutIcon from "./icons/about-icon.tsx";
 import ContactIcon from "./icons/contact-icon.tsx";
 import EducationIcon from "./icons/education-icon.tsx";
@@ -9,8 +9,7 @@ import NavigationItem from "./navigation-item.tsx";
 export default function NavigationBar() {
   return (
     <div
-      class={`h-screen bg-primaryBG-500 border-r-1 border-gray-600 pb-4 pt-14 px-10 flex flex-col justify-between fixed`}
-      style={{ width: DRAWER_WIDTH }}
+      class={` hidden md:flex w-52 h-screen bg-primaryBG-500 border-r-1 border-gray-600 pb-4 pt-14 px-10 flex-col justify-between fixed`}
     >
       <p class={`text(white 2xl) font-black mb-10`}>
         silventino<span class={`text-red-600`}>.</span>

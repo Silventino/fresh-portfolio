@@ -1,10 +1,10 @@
-import NavigationBar from "../components/navigation-bar/navigation-bar.tsx";
 import Head from "../components/head/head.tsx";
 import ContentContainer from "../components/content-container/content-container.tsx";
 import ContentItem from "../components/content-item/content-item.tsx";
 import HomeSection from "../components/sections/home-section/home-section.tsx";
 import AboutSection from "../components/sections/about-section/about-section.tsx";
 import WipSection from "../components/sections/wip-section/wip-section.tsx";
+import NavigationBar from "../components/navigation-bar/navigation-bar.tsx";
 
 export default function Home() {
   return (

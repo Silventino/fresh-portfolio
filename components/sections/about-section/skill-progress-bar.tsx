@@ -14,6 +14,7 @@ export default function SkillProgressBar({ color, progress, skill }: Props) {
           marginBottom: 10,
           display: "flex",
           justifyContent: "space-between",
+          minWidth: 120,
         }}
       >
         <p>{skill}</p>
