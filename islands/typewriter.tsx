@@ -59,15 +59,12 @@ export default function Typewriter({ fixedText, phrases }: Props) {
   }, [blinking, blinkCount]);
 
   return (
-    <p class={`font-bold text(md white) font(thin)`}>
+    <p class={`font-bold text(base white) font(thin)`}>
       {fixedText}
       {text}
       <span
-        style={{
-          fontSize: 20,
-          fontWeight: "bold",
-          opacity: showCursor ? 1 : 0,
-        }}
+        style={{ opacity: showCursor ? 1 : 0 }}
+        class={`text(xl white) font-bold`}
       >
         |
       </span>

@@ -59,20 +59,14 @@ export default function NavigationBar() {
       <div />
       <div />
 
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
+      <div class={`flex flex-col items-center`}>
         <a href="https://fresh.deno.dev">
           <img
             width="197"
             height="37"
             src="https://fresh.deno.dev/fresh-badge-dark.svg"
             alt="Made with Fresh"
-            style={{ marginBottom: 10 }}
+            class={`mb-2`}
           />
         </a>
 

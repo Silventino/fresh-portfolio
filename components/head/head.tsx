@@ -6,7 +6,7 @@ export default function Head() {
         name="description"
         content="A portfolio website using fresh and deno"
       />
-      <title>Fresh Portfolio</title>
+      <title>sil's page</title>
       <link rel="stylesheet" href="/index.css" />
     </head>
   );

@@ -50,14 +50,7 @@ export default function Background() {
   }px)`;
 
   return (
-    <div
-      ref={(x) => (divRef.current = x)}
-      style={{
-        width: "100%",
-        height: "100%",
-        position: "absolute",
-      }}
-    >
+    <div ref={(x) => (divRef.current = x)} class={`w-full h-full absolute`}>
       {/* LAYER 1 */}
       <StarIcon
         width={30}

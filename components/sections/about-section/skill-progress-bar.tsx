@@ -9,16 +9,9 @@ type Props = {
 export default function SkillProgressBar({ color, progress, skill }: Props) {
   return (
     <div>
-      <div
-        style={{
-          marginBottom: 10,
-          display: "flex",
-          justifyContent: "space-between",
-          minWidth: 120,
-        }}
-      >
+      <div style={{ minWidth: 120 }} class={`flex mb-3 justify-between`}>
         <p>{skill}</p>
-        <p style={{ fontWeight: "200" }}>{progress}%</p>
+        <p class={`font-extralight`}>{progress}%</p>
       </div>
       <ProgressBar color={color} progress={progress} />
     </div>

@@ -3,71 +3,45 @@ import SkillProgressBar from "./skill-progress-bar.tsx";
 export default function AboutSection() {
   return (
     <section
-      class={`w-full h-full flex flex-col items-center justify-center`}
-      style={{ position: "relative" }}
+      class={`w-full h-full flex flex-col items-center justify-center relative`}
     >
       <div
-        style={{
-          maxWidth: 900,
-          maxHeight: "90vh",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-        }}
-        class={`px-6 w-full h-full`}
+        class={`w-full h-full flex flex-col justify-between max-w-4xl px-6 py-4 md:py-10`}
       >
         <h2
           style={{
-            fontSize: 36,
             fontFamily: '"Rubik",sans-serif',
-            fontWeight: "700",
             color: "#454360",
           }}
+          class={`text-4xl font-bold`}
         >
           About Me
         </h2>
 
-        <div
-          style={{
-            // height: 300,
-            display: "flex",
-            alignItems: "center",
-          }}
-          class={`flex-col md:flex-row`}
-        >
+        <div class={`flex flex-col md:flex-row items-center `}>
           <img
             src="/me2.png"
-            style={{ height: 150, marginRight: 30 }}
             alt="photo"
-            class={`mb-4`}
+            class={`mb-4 mr-0 md:mr-4 md:mb-0 h-40 w-40 rounded-full`}
           />
 
+          {/* // TODO turn this triangle into a separeted component */}
           <div
             style={{
-              width: 0,
-              height: 0,
               borderTop: "10px solid transparent",
               borderBottom: "10px solid transparent",
               borderRight: "15px solid white",
               transform: "translateY(-5px)",
             }}
-            class={`hidden md:flex`}
+            class={`hidden md:flex w-0 h-0`}
           />
 
           <div
-            style={{
-              boxShadow: "0 5px 60px 0 rgb(69 67 96 / 10%)",
-              height: "100%",
-              width: "100%",
-              backgroundColor: "#fff",
-              borderRadius: 20,
-              display: "flex",
-              alignItems: "center",
-            }}
-            class={`flex-col md:flex-row px-2 md:px-6 py-4`}
+            style={{ boxShadow: "0 5px 60px 0 rgb(69 67 96 / 10%)" }}
+            class={`flex-col md:flex-row px-2 md:px-6 py-4 w-full h-full flex items-center bg-white rounded-2xl`}
           >
-            <div style={{ flex: 1, paddingLeft: 15, paddingRight: 15 }}>
-              <p style={{ fontWeight: "200" }}>
+            <div class={`flex px-2 md:px-6 py-1 md:py-6 `}>
+              <p class={`font-extralight`}>
                 I'm a software engineer based in Brazil 🇧🇷 with 4 years of
                 experience in the software industry.
                 <br></br>
@@ -80,15 +54,7 @@ export default function AboutSection() {
             </div>
 
             <div
-              style={{
-                flex: 1,
-                paddingLeft: 15,
-                paddingRight: 15,
-                justifyContent: "space-around",
-                height: "100%",
-                width: "100%",
-              }}
-              class={`flex-row md:flex-col hidden md:flex`}
+              class={`hidden md:flex flex-row md:flex-col w-full h-full justify-around px-4 flex-1`}
             >
               <SkillProgressBar
                 color="rgb(255, 76, 96)"
@@ -109,26 +75,12 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            width: "100%",
-            alignItems: "center",
-          }}
-        >
-          <h1 style={{ fontSize: 24, marginBottom: 10 }}>Want to know more?</h1>
+        <div class={`flex flex-col w-full items-center`}>
+          <h1 class={`text(2xl) mb-4`}>Want to know more?</h1>
           <a
             href="https://silventino.notion.site/Pedro-Silveira-Lopes-9386f60ab4634284b2cf3b5d987113af"
             target="_blank"
-            style={{
-              color: "#fff",
-              background: "#ff4c60",
-              display: "inline-block",
-              verticalAlign: "middle",
-              padding: "15px 30px 15px 30px",
-              borderRadius: 30,
-            }}
+            class={`text(white) inline-block rounded-full align-middle px-6 py-4 bg-rose-500`}
           >
             Download CV
           </a>

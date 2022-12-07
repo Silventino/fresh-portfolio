@@ -8,10 +8,10 @@ export default function ProgressBar({ color, progress }: Props) {
     <div
       style={{
         height: 7,
-        width: "100%",
         backgroundColor: "#f1f1f1",
         borderRadius: 15,
       }}
+      class={`w-full`}
     >
       <div
         style={{

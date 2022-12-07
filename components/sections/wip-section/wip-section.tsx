@@ -1,8 +1,7 @@
 export default function WipSection() {
   return (
     <section
-      class={`w-full h-full flex flex-col items-center justify-center`}
-      style={{ position: "relative" }}
+      class={`w-full h-full flex flex-col items-center justify-center relative`}
     >
       <img src="/robozin.png" />
       <h2

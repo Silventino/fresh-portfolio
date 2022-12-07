@@ -8,8 +8,7 @@ import Background from "../../../islands/background.tsx";
 export default function HomeSection() {
   return (
     <section
-      class={`w-full h-full flex flex-col items-center justify-center`}
-      style={{ position: "relative" }}
+      class={`w-full h-full flex flex-col items-center justify-center relative`}
     >
       <Background />
 
